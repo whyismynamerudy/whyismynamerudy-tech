@@ -1,0 +1,12 @@
+.about {
+    height: 100vh;
+    display: flex;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-right {
+    flex: 1;
+}
