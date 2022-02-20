@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Intro.css";
 import me from "../../img/me-cutout.png";
+import TypeWriterEffect from 'react-typewriter-effect';
 
 const roles = ['Web Developer', 'University Student', 'Writer', 'Logician', 'Content Creator'];
 // remember to change animation % in css when adding / removing roles
@@ -12,7 +13,14 @@ const Intro = () => {
         <div className="intro-left">
           <div className="intro-left-wrapper">
             <h2 className='intro-intro'>Hello, my name is</h2>
-            <h1 className='intro-name'>Rudraksh "Rudy" Monga</h1>
+            <TypeWriterEffect
+              className="intro-name"
+              textStyle={{ fontFamily: 'Poppins', fontSize: 60, color: 'white' }}
+              startDelay={100}
+              cursorColor= 'white'
+              text="Rudraksh 'Rudy' Monga"
+              typeSpeed={100}
+          />
             <div className="intro-title">
               <div className="intro-title-wrapper">
                 {visibleRoles}
