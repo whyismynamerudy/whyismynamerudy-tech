@@ -1,0 +1,6 @@
+.nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 50px;
+    overflow: auto;
+}
