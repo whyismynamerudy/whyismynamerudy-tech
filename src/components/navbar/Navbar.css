@@ -1,6 +1,25 @@
-.nav-wrapper {
-    display: flex;
+.sidebar-nav {
+    display:flex;
     flex-direction: column;
-    max-width: 50px;
-    overflow: auto;
+    align-items: flex-end;
+    top: 73vh;
+    right: 0;
+    padding-right: 5vh;
+    padding-bottom: 10%;
+    background-color: transparent;
+    position: fixed;
+}
+
+.sidebar-links {
+    text-align: right;
+    line-height: 1.9;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar-logos {
+    padding-top: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
 }

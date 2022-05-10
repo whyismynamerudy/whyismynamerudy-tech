@@ -1,12 +1,15 @@
 .intro{
     display: flex;
     height: 100vh;
-    background-color: #010328;
+    background-color: #0a192f;
+    align-items: center;
+    padding-left: 6%;
 }
 
-.intro-left {
+/* .intro-left {
     flex: 4;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -18,11 +21,11 @@
 
 .intro-nav {
     flex: 1;
-}
+} */
 
-.intro-left-wrapper {
-    padding: 50px;
-    height: 30%;
+.intro-wrapper {
+    padding: 100px;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,6 +40,7 @@
 .intro-name {
     font-size: 60px;
     color: #EEEEEE;
+    min-height: 60px;
 }
 
 .intro-title {
@@ -75,9 +79,11 @@
 
 .intro-description {
     color: #EEEEEE;
+    width: 60%;
+    line-height: 1.9;
 }
 
-.intro-img {
+/* .intro-img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -94,4 +100,23 @@
     position: absolute;
     top: 0;
     right: 0;
+} */
+
+.intro-email {
+    padding-top: 20px;
+    border-color: aqua;
+}
+
+.intro-button {
+    background-color: #0a192f;
+    border-radius: 4px;
+    color: white;
+    border-color: aqua;
+    font-size: 18px;
+    padding: 18px;
+}
+
+.intro-button:hover {
+    background-color: #122C54;
+    color: grey;
 }

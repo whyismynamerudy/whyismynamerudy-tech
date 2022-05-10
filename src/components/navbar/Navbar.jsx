@@ -1,23 +1,42 @@
 import React from 'react';
-import { Nav, Sidenav } from 'rsuite';
+import Sidenav from 'rsuite/Sidenav';
+//import Nav from 'rsuite/Nav';
 import "./Navbar.css";
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-//const items = ['home', 'about', 'projects', 'resume'];
+const items = [
+  <a href="#intro">/home</a>,
+  <a href="#about">/about</a>,
+  <a href="#productList">/projects</a>,
+  <a href="#contact">/contact</a>
+];
 
 const Navbar = () => {
   return (
-    <div className="nav-wrapper">
+    <div className="sidebar-nav">
       <Sidenav
-      appearance='subtle'>
+        defaultOpenKeys={["3", "4"]}
+        appearance={"subtle"}
+      >
         <Sidenav.Body>
-          <Nav>
-            <Nav.Item>/home</Nav.Item>
-            <Nav.Item>/about</Nav.Item>
-            <Nav.Item>/projects</Nav.Item>
-            <Nav.Item>/resume</Nav.Item>
-          </Nav>
+          <div className="sidebar-links">
+            {items.map(item => <div>{item}</div>)}
+          </div>
         </Sidenav.Body>
       </Sidenav>
+      <div className="sidebar-logos">
+        <a href='mailto:rudraksh.monga@mail.utoronto.ca'>
+          <EmailIcon style={{ fontSize: 20 }}></EmailIcon>
+        </a>
+        <a href="https://github.com/whyismynamerudy">
+          <GitHubIcon style={{ fontSize: 20 }}></GitHubIcon>
+        </a>
+        <a href="https://www.linkedin.com/in/rudraksh-monga-5014041b5/">
+          <LinkedInIcon style={{ fontSize: 20 }}></LinkedInIcon>
+        </a>
+      </div>
     </div>
   )
 }

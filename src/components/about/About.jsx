@@ -1,10 +1,67 @@
 import React from 'react';
 import "./About.css";
+import me from "../../img/me-cutout.png";
+import me2 from "../../img/me.jpg";
+import meSquare from "../../img/meSquare.png";
 
 const About = () => {
+
+  const details = (
+    <p>
+      I am currently a second year <b>Computer Science</b> major, <b>Mathematics </b> 
+      minor, and <b>Statistics</b> minor at the <b><a href="https://www.utoronto.ca/about-u-of-t">
+      University of Toronto</a></b>. As a student, I strive to assimilate knowledge from all 
+      revenues to apply it to various projects and internships I hope to aquire in the 
+      next few years. 
+    </p>
+  );
+
+  const extra = (
+    <p>
+      Outside of work and academics, I'm a big <b>hip-hop</b> nerd. I love listening to 
+      artists like  J. Cole, Dave, and Conway the Machine while I'm playing badminton 
+      or skateboarding. 
+    </p>
+  );
+
+  const tech_stack = [
+    "Javascript ES6+",
+    "Python", 
+    "Java",
+    "HTML/CSS",
+    "React.js",
+    "C++"
+  ];
+
+  const tech_items = tech_stack.map(stack => <li>{stack}</li>);
+
   return (
     <div className='about'>
-        <div className="about-left">
+        <div className="about-header">
+          <span className="about-title">/ about_me</span>
+        </div>
+        <div className="about-content">
+          <div className="about-desc">
+            {details}
+            <br></br>
+            Here are some of the technologies I've been working with:
+            <ul className="tech-stack">
+              {tech_items}
+            </ul>
+            <br></br>
+            {extra}
+          </div>
+          <div className="about-img">
+            <img src={meSquare} className='my-image'/>
+          </div>
+        </div>
+    </div>
+  )
+}
+
+export default About
+
+{/* <div className="about-left">
           <div className="about-card bg"></div>
           <div className="about-card">
             <img 
@@ -27,9 +84,4 @@ const About = () => {
                 did this and organized that and successfully won GWR.</p>
             </div>
           </div>
-        </div>
-    </div>
-  )
-}
-
-export default About
+        </div> */}
