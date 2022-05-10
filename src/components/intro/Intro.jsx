@@ -9,7 +9,7 @@ const visibleRoles = roles.map(role => <div className='intro-title-item'>{role}<
 
 const Intro = () => {
   return (
-    <div className='intro'>
+    <div className='intro' id="intro">
       <div className="intro-wrapper">
         <h2 className='intro-intro'>Hi, my name is</h2>
         <TypeWriterEffect

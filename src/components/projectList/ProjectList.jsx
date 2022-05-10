@@ -45,7 +45,7 @@ const ProductList = () => {
     ];
 
   return (
-    <div className="projectList">
+    <div className="projectList" id="projectList">
         <div className="projectList-header">
             <span className='projectList-title'>/ projects</span>
         </div>

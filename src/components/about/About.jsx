@@ -36,7 +36,7 @@ const About = () => {
   const tech_items = tech_stack.map(stack => <li>{stack}</li>);
 
   return (
-    <div className='about'>
+    <div className='about' id="about">
         <div className="about-header">
           <span className="about-title">/ about me</span>
         </div>

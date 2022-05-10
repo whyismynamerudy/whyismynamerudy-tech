@@ -4,11 +4,12 @@ import "./Navbar.css";
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const items = [
-  <a href="#intro">/home</a>,
-  <a href="#about">/about</a>,
-  <a href="#productList">/projects</a>
+  <Link smooth to="#intro">/home</Link>,
+  <Link smooth to="/#about">/about</Link>,
+  <Link smooth to="/#projectList">/projects</Link>
 ];
 
 const Navbar = () => {
