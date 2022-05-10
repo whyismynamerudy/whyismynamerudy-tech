@@ -26,13 +26,13 @@ const Navbar = () => {
         </Sidenav.Body>
       </Sidenav>
       <div className="sidebar-logos">
-        <a href='mailto:rudraksh.monga@mail.utoronto.ca'>
+        <a href='mailto:rudraksh.monga@mail.utoronto.ca' target="_blank">
           <EmailIcon style={{ fontSize: 20 }}></EmailIcon>
         </a>
-        <a href="https://github.com/whyismynamerudy">
+        <a href="https://github.com/whyismynamerudy" target="_blank">
           <GitHubIcon style={{ fontSize: 20 }}></GitHubIcon>
         </a>
-        <a href="https://www.linkedin.com/in/rudraksh-monga-5014041b5/">
+        <a href="https://www.linkedin.com/in/rudraksh-monga-5014041b5/" target="_blank">
           <LinkedInIcon style={{ fontSize: 20 }}></LinkedInIcon>
         </a>
       </div>

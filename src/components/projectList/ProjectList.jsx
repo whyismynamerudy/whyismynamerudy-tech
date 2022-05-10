@@ -9,7 +9,7 @@ const ProductList = () => {
   const projects = [
       {
           title: "whyismynamerudy.tech",
-          desc: "My personal website made using React.js.",
+          desc: "My personal website made using React.js and React Router.",
           tech_stack: "Javascript, React.js, HTML/CSS",
           link: "https://github.com/whyismynamerudy/whyismynamerudy-tech",
           open: "https://whyismynamerudy.tech/"

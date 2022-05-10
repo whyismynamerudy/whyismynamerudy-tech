@@ -12,10 +12,10 @@ const Product = ({ title, desc, tech_stack, link, open }) => {
           <FolderOpenRoundedIcon style={{ fontSize: 38}} />
         </div>
         <div className="external-links">
-          <a href={link} className="github-icon">
+          <a href={link} target="_blank" className="github-icon">
             <GitHubIcon style={{ fontSize: 24}} />
           </a>
-          <a href={open} className="browser-icon">
+          <a href={open} target="_blank" className="browser-icon">
             <OpenInBrowserIcon style={{ fontSize: 26}}/>
           </a>
         </div>

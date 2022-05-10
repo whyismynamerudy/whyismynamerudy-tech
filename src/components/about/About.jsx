@@ -9,7 +9,7 @@ const About = () => {
   const details = (
     <p>
       I am currently a second year <b>Computer Science</b> major, <b>Mathematics </b> 
-      minor, and <b>Statistics</b> minor at the <b><a href="https://www.utoronto.ca/about-u-of-t">
+      minor, and <b>Statistics</b> minor at the <b><a href="https://www.utoronto.ca/about-u-of-t" target="_blank">
       University of Toronto</a></b>. As a student, I strive to assimilate knowledge from all 
       revenues to apply it to various projects and internships I hope to aquire in the 
       next few years. 
