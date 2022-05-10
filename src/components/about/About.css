@@ -13,9 +13,10 @@
 }
 
 .about-title {
-    font-size: 40px;
+    font-size: 50px;
     color: #EEEEEE;
     font-weight: 950;
+    font-family: 'NTR', sans-serif;
 }
 
 .about-content {
@@ -41,10 +42,12 @@
 }
 
 .my-image {
-    max-width: 57%;
-    object-fit: contain;
+    margin-top: 10%;
+    max-width: 65%;
+    max-height: 65%;
     position: relative;
     overflow: hidden;
+    border-radius: 7%;
 }
 
 .my-image:hover {
@@ -84,6 +87,7 @@ a:unvisited {
     content: "▹   ";
     left: 0;
     position: absolute;
+    color: aqua;
 }
 
 .tech-stack {
