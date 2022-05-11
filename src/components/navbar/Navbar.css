@@ -10,6 +10,12 @@
     position: fixed;
 }
 
+@media screen and (max-width: 820px) {
+    .sidebar-nav {
+        display: none;
+    }
+}
+
 .sidebar-links {
     text-align: right;
     line-height: 1.9;

@@ -1,9 +1,11 @@
 .about {
-    height: 75vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 13%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .about-header {
@@ -24,6 +26,7 @@
     flex-direction: row;
     font-size: 18px;
     line-height: 1.7;
+    padding-right: 10px;
 }
 
 .about-desc {
@@ -92,6 +95,48 @@ a:unvisited {
 
 .tech-stack {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 788px) {
+
+    .about {
+        height: unset;
+        padding-left: 13%;
+        padding-right: 7%;
+        padding-top: 10%;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        font-size: 17px;
+        line-height: 1.9;
+    }
+
+    .about-desc {
+        padding-top: 0px;
+    }
+
+    .about-header {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .about-img {
+        display:none;
+    }
+
+    .about {
+        height: unset;
+        padding-left: 13%;
+        padding-right: 7%;
+        padding-top: 10%;
+    }
 }
 
 /* .about-left {

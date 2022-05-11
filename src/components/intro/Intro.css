@@ -120,3 +120,45 @@
     background-color: #122C54;
     color: grey;
 }
+
+@media screen and (max-width: 788px) {
+
+    .intro {
+        height: 100%;
+        padding-left: unset;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .intro-wrapper {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .intro-intro {
+        text-align: center;
+    }
+
+    h1.react-typewriter-text {
+        text-align: center;
+    }
+
+    .intro-title {
+        display: none;
+    }
+
+    .intro-description {
+        margin: auto;
+        text-align: justify;
+    }
+
+    .intro-email {
+        margin: auto;
+    }
+
+    .intro-name {
+        font-size: 40px;
+    }
+}
