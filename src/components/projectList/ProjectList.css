@@ -1,9 +1,11 @@
 .projectList {
-    height: 110vh;
+    height: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 24px;
     padding-left: 13%;
     padding-right: 24%;
+    margin-bottom: 30px;
 }
 
 .projectList-header {
