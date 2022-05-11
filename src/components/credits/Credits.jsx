@@ -9,7 +9,7 @@ const Credits = () => {
     <div className="credits">
         <div>Built and designed by Rudraksh Monga.</div>
         <div>All rights reserved. ©</div>
-        <div className="external-links">
+        <div className="credits-external-links">
           <a href='mailto:rudraksh.monga@mail.utoronto.ca' target="_blank">
             <EmailIcon style={{ fontSize: 35 }}></EmailIcon>
           </a>

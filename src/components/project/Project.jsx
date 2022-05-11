@@ -13,10 +13,10 @@ const Product = ({ title, desc, tech_stack, link, open }) => {
         </div>
         <div className="external-links">
           <a href={link} target="_blank" className="github-icon">
-            <GitHubIcon style={{ fontSize: 24}} />
+            <GitHubIcon style={{ fontSize: 24 }} />
           </a>
-          <a href={open} target="_blank" className="browser-icon">
-            <OpenInBrowserIcon style={{ fontSize: 26}}/>
+          <a href={open} target="_blank" className="browser-icon" >
+            <OpenInBrowserIcon style={{ fontSize: 26 }}/>
           </a>
         </div>
       </div>
