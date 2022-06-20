@@ -11,26 +11,28 @@ const About = () => {
       I am currently a second year <b>Computer Science</b> major, <b>Mathematics </b> 
       minor, and <b>Statistics</b> minor at the <b><a href="https://www.utoronto.ca/about-u-of-t" target="_blank">
       University of Toronto</a></b>. As a student, I strive to assimilate knowledge from all 
-      revenues to apply it to various projects and internships I hope to aquire in the 
+      revenues to apply it to various projects and internships I hope to acquire in the 
       next few years. 
     </p>
   );
 
   const extra = (
     <p>
-      Outside of work and academics, I'm a big <b>hip-hop</b> nerd. I love listening to 
-      artists like  J. Cole, Dave, and Conway the Machine while I'm playing badminton 
+      Outside of academics, I'm a big <b>hip-hop</b> nerd. I love listening to 
+      artists like  J. Cole, Dave, and Conway the Machine while I'm playing volleyball 
       or skateboarding. 
     </p>
   );
 
   const tech_stack = [
-    "Javascript ES6+",
+    "Javascript",
     "Python", 
     "Java",
     "HTML/CSS",
     "React.js",
-    "C++"
+    "Node.js",
+    "Express.js",
+    "MongoDB Atlas"
   ];
 
   const tech_items = tech_stack.map(stack => <li>{stack}</li>);
@@ -38,13 +40,13 @@ const About = () => {
   return (
     <div className='about' id="about">
         <div className="about-header">
-          <span className="about-title">/ about me</span>
+          <span className="about-title">&lt; About Me /&gt;</span>
         </div>
         <div className="about-content">
           <div className="about-desc">
             {details}
             <br></br>
-            Here are some of the technologies I've been working with:
+            Here are some of the technologies I've worked with:
             <ul className="tech-stack">
               {tech_items}
             </ul>

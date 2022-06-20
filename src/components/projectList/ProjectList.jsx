@@ -15,6 +15,20 @@ const ProductList = () => {
           open: "https://whyismynamerudy.tech/"
       },
       {
+          title: "Pokemon Generator",
+          desc: "Generate a Pokemon with a click of a button!",
+          tech_stack: "Javascript, React.js, Axios, HTML/CSS",
+          link: "https://github.com/whyismynamerudy/random-pokemon-generator",
+          open: "https://random-pokemon-generator-react.herokuapp.com/"
+      },
+      {
+          title: "Pokemon Collector",
+          desc: "A full-stack web application that allows users to collect Pokemon.",
+          tech_stack: "Javascript, MERN Stack, React Router, HTML/CSS",
+          link: "https://github.com/whyismynamerudy/pokemon-collector",
+          open: "https://pokemon-collector-wimnr.herokuapp.com/"
+      },
+      {
         title: "Planck",
         desc: "A homework planner application that aids in time management and organization.",
         tech_stack: "Java, JavaFX, MySQL",
@@ -47,7 +61,7 @@ const ProductList = () => {
   return (
     <div className="projectList" id="projectList">
         <div className="projectList-header">
-            <span className='projectList-title'>/ projects</span>
+            <span className='projectList-title'>&lt; Projects /&gt;</span>
         </div>
         <div className="projectList-list">
             {projects.map((project) => {

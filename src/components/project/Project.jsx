@@ -15,9 +15,11 @@ const Product = ({ title, desc, tech_stack, link, open }) => {
           <a href={link} target="_blank" className="github-icon">
             <GitHubIcon style={{ fontSize: 24 }} />
           </a>
+          {open !== "" && 
           <a href={open} target="_blank" className="browser-icon" >
-            <OpenInBrowserIcon style={{ fontSize: 26 }}/>
+          <OpenInBrowserIcon style={{ fontSize: 26 }}/>
           </a>
+          }
         </div>
       </div>
       <div className="project-title">{title}</div>

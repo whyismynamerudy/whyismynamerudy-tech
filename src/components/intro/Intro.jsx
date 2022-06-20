@@ -3,7 +3,7 @@ import "./Intro.css";
 import me from "../../img/me-cutout.png";
 import TypeWriterEffect from 'react-typewriter-effect';
 
-const roles = ['Software Engineer', 'University Student', 'Writer', 'Web Developer', 'Content Creator'];
+const roles = ['Software Engineer', 'University Student', 'Writer', 'Web Developer', 'Logician'];
 // remember to change animation % in css when adding / removing roles
 const visibleRoles = roles.map(role => <div className='intro-title-item'>{role}</div>);
 
@@ -30,11 +30,11 @@ const Intro = () => {
           interest in full-stack development, artifical intellgience, game development,
           and everything in between.
         </div>
-        <div className="intro-email">
+        {/* <div className="intro-email">
           <button className="intro-button" onClick={() => window.location.href = 'mailto:rudraksh.monga@gmail.com'}>
             Say hi!
           </button>
-        </div>
+        </div> */}
       </div>
         {/* <div className="intro-right">
           <div className="intro-bg"></div>

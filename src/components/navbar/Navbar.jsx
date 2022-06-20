@@ -7,9 +7,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const items = [
-  <Link smooth to="#intro">/home</Link>,
-  <Link smooth to="/#about">/about</Link>,
-  <Link smooth to="/#projectList">/projects</Link>
+  <Link smooth to="#intro">&lt; Home /&gt;</Link>,
+  <Link smooth to="/#about">&lt; About Me /&gt;</Link>,
+  <Link smooth to="/#projectList">&lt; Projects /&gt;</Link>
 ];
 
 const Navbar = () => {
